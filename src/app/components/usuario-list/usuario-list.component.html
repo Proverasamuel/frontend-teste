@@ -1,0 +1,13 @@
+<div class="form-control">
+    <input type="text" #nome placeholder="Nome">
+    <input type="email" #email placeholder="Email">
+    <input type="password" #senha placeholder="Senha">
+    <button (click)="addUsuario(nome.value, email.value, senha.value)">Adicionar Usuário</button>
+  </div>
+  
+  <ul>
+    <li *ngFor="let usuario of usuarios">
+      {{ usuario.nome }} - {{ usuario.email }}
+      <button (click)="deleteUsuario(usuario.id)">Excluir</button>
+    </li>
+  </ul>

@@ -1,0 +1,15 @@
+.form-control{
+    display: flex;
+    margin: auto;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.form-control .input{
+    display: flex;
+}
+
+.form-control .input input[type="text"], .form-control .input input[type="password"]{
+    flex: 1;
+    padding: 1em;
+}
